@@ -1,0 +1,634 @@
+Time: 0
+Waiting clients:
+(1, 3, 3)
+(2, 3, 4)
+(3, 3, 3)
+(7, 4, 3)
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 1
+Waiting clients:
+(1, 3, 3)
+(2, 3, 4)
+(3, 3, 3)
+(7, 4, 3)
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 2
+Waiting clients:
+(1, 3, 3)
+(2, 3, 4)
+(3, 3, 3)
+(7, 4, 3)
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 3
+Waiting clients:
+(7, 4, 3)
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(1, 3, 3), (3, 3, 3)] | Waiting Period: 6
+Server 2 | Tasks: 1 [(2, 3, 4)] | Waiting Period: 4
+
+Time: 4
+Waiting clients:
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(1, 3, 2), (3, 3, 3)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(2, 3, 3), (7, 4, 3)] | Waiting Period: 6
+
+Time: 5
+Waiting clients:
+(6, 6, 4)
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(1, 3, 1), (3, 3, 3)] | Waiting Period: 4
+Server 2 | Tasks: 2 [(2, 3, 2), (7, 4, 3)] | Waiting Period: 5
+
+Time: 6
+Waiting clients:
+(9, 7, 2)
+(10, 7, 2)
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(3, 3, 3), (6, 6, 4)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(2, 3, 1), (7, 4, 3)] | Waiting Period: 4
+
+Time: 7
+Waiting clients:
+(5, 8, 4)
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(3, 3, 2), (6, 6, 4)] | Waiting Period: 6
+Server 2 | Tasks: 3 [(7, 4, 3), (9, 7, 2), (10, 7, 2)] | Waiting Period: 7
+
+Time: 8
+Waiting clients:
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 3 [(3, 3, 1), (6, 6, 4), (5, 8, 4)] | Waiting Period: 9
+Server 2 | Tasks: 3 [(7, 4, 2), (9, 7, 2), (10, 7, 2)] | Waiting Period: 6
+
+Time: 9
+Waiting clients:
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(6, 6, 4), (5, 8, 4)] | Waiting Period: 8
+Server 2 | Tasks: 3 [(7, 4, 1), (9, 7, 2), (10, 7, 2)] | Waiting Period: 5
+
+Time: 10
+Waiting clients:
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(6, 6, 3), (5, 8, 4)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(9, 7, 2), (10, 7, 2)] | Waiting Period: 4
+
+Time: 11
+Waiting clients:
+(4, 12, 2)
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(6, 6, 2), (5, 8, 4)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(9, 7, 1), (10, 7, 2)] | Waiting Period: 3
+
+Time: 12
+Waiting clients:
+(8, 13, 2)
+
+Servers:
+Server 1 | Tasks: 2 [(6, 6, 1), (5, 8, 4)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(10, 7, 2), (4, 12, 2)] | Waiting Period: 4
+
+Time: 13
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(5, 8, 4)] | Waiting Period: 4
+Server 2 | Tasks: 3 [(10, 7, 1), (4, 12, 2), (8, 13, 2)] | Waiting Period: 5
+
+Time: 14
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(5, 8, 3)] | Waiting Period: 3
+Server 2 | Tasks: 2 [(4, 12, 2), (8, 13, 2)] | Waiting Period: 4
+
+Time: 15
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(5, 8, 2)] | Waiting Period: 2
+Server 2 | Tasks: 2 [(4, 12, 1), (8, 13, 2)] | Waiting Period: 3
+
+Time: 16
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(5, 8, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(8, 13, 2)] | Waiting Period: 2
+
+Time: 17
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 1 [(8, 13, 1)] | Waiting Period: 1
+
+Time: 18
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 19
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 20
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 0
+Waiting clients:
+(5, 4, 4)
+(7, 5, 2)
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 1
+Waiting clients:
+(5, 4, 4)
+(7, 5, 2)
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 2
+Waiting clients:
+(5, 4, 4)
+(7, 5, 2)
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 3
+Waiting clients:
+(5, 4, 4)
+(7, 5, 2)
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 4
+Waiting clients:
+(7, 5, 2)
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(5, 4, 4)] | Waiting Period: 4
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 5
+Waiting clients:
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(5, 4, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(7, 5, 2)] | Waiting Period: 2
+
+Time: 6
+Waiting clients:
+(8, 7, 4)
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(5, 4, 2)] | Waiting Period: 2
+Server 2 | Tasks: 1 [(7, 5, 1)] | Waiting Period: 1
+
+Time: 7
+Waiting clients:
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(5, 4, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(8, 7, 4)] | Waiting Period: 4
+
+Time: 8
+Waiting clients:
+(2, 9, 4)
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 1 [(8, 7, 3)] | Waiting Period: 3
+
+Time: 9
+Waiting clients:
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(2, 9, 4)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(8, 7, 2)] | Waiting Period: 2
+
+Time: 10
+Waiting clients:
+(3, 11, 3)
+(4, 11, 2)
+(6, 11, 2)
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(2, 9, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(8, 7, 1)] | Waiting Period: 1
+
+Time: 11
+Waiting clients:
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(2, 9, 2), (4, 11, 2)] | Waiting Period: 4
+Server 2 | Tasks: 3 [(8, 7, 1), (3, 11, 3), (6, 11, 2)] | Waiting Period: 6
+
+Time: 12
+Waiting clients:
+(1, 13, 4)
+(10, 13, 2)
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(2, 9, 1), (4, 11, 2)] | Waiting Period: 3
+Server 2 | Tasks: 2 [(3, 11, 3), (6, 11, 2)] | Waiting Period: 5
+
+Time: 13
+Waiting clients:
+(9, 14, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(4, 11, 2), (1, 13, 4)] | Waiting Period: 6
+Server 2 | Tasks: 3 [(3, 11, 1), (6, 11, 2), (10, 13, 2)] | Waiting Period: 5
+
+Time: 14
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 2 [(4, 11, 1), (1, 13, 4)] | Waiting Period: 5
+Server 2 | Tasks: 3 [(6, 11, 2), (10, 13, 2), (9, 14, 4)] | Waiting Period: 8
+
+Time: 15
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(1, 13, 4)] | Waiting Period: 4
+Server 2 | Tasks: 3 [(6, 11, 1), (10, 13, 2), (9, 14, 4)] | Waiting Period: 7
+
+Time: 16
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 1 [(1, 13, 3)] | Waiting Period: 3
+Server 2 | Tasks: 2 [(10, 13, 2), (9, 14, 4)] | Waiting Period: 6
+
+Time: 0
+Waiting clients:
+(4, 2, 2)
+(1, 4, 2)
+(8, 4, 4)
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 1
+Waiting clients:
+(4, 2, 2)
+(1, 4, 2)
+(8, 4, 4)
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 2
+Waiting clients:
+(1, 4, 2)
+(8, 4, 4)
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(4, 2, 2)] | Waiting Period: 2
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 3
+Waiting clients:
+(1, 4, 2)
+(8, 4, 4)
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(4, 2, 1)] | Waiting Period: 1
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 4
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(8, 4, 4)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(1, 4, 2)] | Waiting Period: 2
+
+Time: 5
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(8, 4, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(1, 4, 1)] | Waiting Period: 1
+
+Time: 6
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(8, 4, 2)] | Waiting Period: 2
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 7
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(8, 4, 1)] | Waiting Period: 1
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 8
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 9
+Waiting clients:
+(6, 10, 2)
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 10
+Waiting clients:
+(5, 11, 3)
+(7, 11, 3)
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 1 [(6, 10, 2)] | Waiting Period: 2
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 11
+Waiting clients:
+(9, 12, 2)
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(6, 10, 1), (7, 11, 3)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(5, 11, 3)] | Waiting Period: 3
+
+Time: 12
+Waiting clients:
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(7, 11, 3), (9, 12, 2)] | Waiting Period: 5
+Server 2 | Tasks: 1 [(5, 11, 3)] | Waiting Period: 3
+
+Time: 13
+Waiting clients:
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(7, 11, 2), (9, 12, 2)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(5, 11, 1)] | Waiting Period: 1
+
+Time: 14
+Waiting clients:
+(2, 15, 2)
+(3, 15, 3)
+(10, 15, 4)
+
+Servers:
+Server 1 | Tasks: 2 [(7, 11, 1), (9, 12, 2)] | Waiting Period: 3
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+
