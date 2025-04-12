@@ -9,29 +9,37 @@ import Model.Task;
 
 public class SimulationManager implements Runnable {
     // Spune că sunt input, ar trebui să le primesc din interfață
-    public int timeLimit = 60;
-    public int maxArrivleTime=15;
-    public int minArrivalTime=2;
-    public int maxServiceTime = 4;
-    public int minServiceTime = 2;
-    public int numberOfServers = 2;
-    public int numberOfClients = 10;
-    public SelectionPolicy selectionPolicy = SelectionPolicy.SHORTEST_TIME; // selectez metoda de sortare
+    public int timeLimit;
+    public int maxArrivleTime;
+    public int minArrivalTime;
+    public int maxServiceTime;
+    public int minServiceTime;
+    public int numberOfServers;
+    public int numberOfClients;
+    public SelectionPolicy selectionPolicy; // selectez metoda de sortare
     private Scheduler scheduler;
     private SimulationFrame frame;
 
     private ArrayList<Task> generatedTasks;
+    public void init() {
+        this.timeLimit = frame.getTimeLimit();
+        this.maxArrivleTime = frame.getMaxArrivalTime();
+        this.minArrivalTime = frame.getMinArrivalTime();
+        this.maxServiceTime = frame.getMaxServiceTime();
+        this.minServiceTime = frame.getMinServiceTime();
+        this.numberOfClients = frame.getNumberOfClients();
+        this.numberOfServers = frame.getNumberOfServers();
+        this.selectionPolicy = frame.getPolicyComboBox();
 
-    public SimulationManager() {
-        // intializam scheduler-ul cu numarul maxim de servere si clienti per server
         scheduler = new Scheduler(numberOfServers, numberOfClients);
         scheduler.changeStrategy(selectionPolicy);
-        // frame pentru a afisa rezultatele
-       frame = new SimulationFrame();
-
-        // aici stocam taskurile generate
-        generatedTasks = new ArrayList<>();
     }
+
+    public SimulationManager(SimulationFrame frame) {
+        this.frame = frame;
+        this.generatedTasks = new ArrayList<>();
+    }
+
 
     // genram taskuri random
     private void generateNRandomTasks() {
@@ -53,21 +61,47 @@ public class SimulationManager implements Runnable {
 
     @Override
     public void run() {
-
+        init();
         int currentTime = 0;
-        StringBuilder logData = new StringBuilder();
+        int peakHour=0;
+        int maxTasks =0; // aici compram in fiecare timp cate taskuri sunt in cozi
+        int totalTasks =0;
+        double totalWaitingTime=0;
+        int tasksWaiting=0;
+        double totalServiceTime=0;
+        int tasksServed=0;
         // generam taskurile random
         generateNRandomTasks();
          while(true) {
-             while (currentTime <= timeLimit) {
+             if (currentTime > timeLimit || (generatedTasks.size() == 0  && scheduler.schedulerIsEmpty())) {
+                 break;
+             }
+
                  // cautam taskurile care au  arrivalTime == currentTime
                  for (Task task : new ArrayList<>(generatedTasks)) {
+                     int waiting=0;
                      if (task.getArrivalTime() == currentTime) {
-                         // vedem in ce coada punem
-                         scheduler.dispatchTask(task);
-                         generatedTasks.remove(task); // dupa ce il punem in coada il stergem
+                         tasksWaiting++;
+                         waiting = scheduler.dispatchTask(task); // acum e corect
+                         if (currentTime + waiting > timeLimit) {
+                             totalWaitingTime += timeLimit - currentTime;
+                         } else {
+                             totalWaitingTime += waiting;
+                         }
+                         if(currentTime + waiting+task.getServiceTime() <= timeLimit) {
+                             totalServiceTime += task.getServiceTime();
+                             tasksServed++;
+                         }
+                         generatedTasks.remove(task);
                      }
+
                  }
+             totalTasks =scheduler.totalTasks();
+             if(totalTasks > maxTasks) {
+                 peakHour=currentTime;
+                 maxTasks = totalTasks;
+             }
+                 scheduler.removeCompletedTasks();
 
                  // actualizam frame
                 frame.update(currentTime, generatedTasks, scheduler.getServers());
@@ -82,16 +116,18 @@ public class SimulationManager implements Runnable {
 
                  // trecem la urmatorul time
                  currentTime++;
+
              }
-
-
+        System.out.println("totalW: " + totalWaitingTime + ", TasksWaiting: " + tasksWaiting+"\n");
+         System.out.println("totalS " + totalServiceTime + ", TasksServed: " + tasksServed+"\n");
+        totalWaitingTime=(double)totalWaitingTime/(double)tasksWaiting; //calculam pe rand pentru ficare task cat are de stat in coada,daca depaseste timpul simulari audnam cat mai e pana la finalul simularii. impartim la cate taskuri au ajuns in cozi
+        totalServiceTime=(double)totalServiceTime/(double)tasksServed;
+       frame.lastUpdate("Final Time", generatedTasks, scheduler.getServers(),peakHour,totalWaitingTime,totalServiceTime);
+        System.out.println("Simularea s-a încheiat!");
+        System.out.println("Ora de vârf: " + peakHour);
         frame.displayResults(scheduler);
-             }
-    }
-
-    public static void main(String[] args) {
-        SimulationManager simManager = new SimulationManager();
-        Thread simulationThread = new Thread(simManager);
-        simulationThread.start();
+       // System.out.println("Timp mediu de așteptare: " + averageWaitingTime);
+//        System.out.println("Timp mediu de procesare: " + averageServiceTime);
+//        System.out.println("Cozile sunt goale la timpul " + currentTime);
     }
 }

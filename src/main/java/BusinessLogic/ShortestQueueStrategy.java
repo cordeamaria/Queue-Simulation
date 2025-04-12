@@ -6,6 +6,7 @@ import Model.Task;
 import java.util.List;
 
 public class ShortestQueueStrategy implements Strategy {
+    private Server server;
     @Override
     public void addTask(List<Server> servers, Task t) {
         // presupunem initial ca prima coada este cea mai scurta
@@ -21,6 +22,16 @@ public class ShortestQueueStrategy implements Strategy {
 
         // adaugam taskul in coada aleasa
         bestServer.addTask(t);
+        server=bestServer;
+    }
+
+    @Override
+    public Server getServer() {
+        return server;
+    }
+
+    public void setServer(Server server) {
+        this.server = server;
     }
 }
 

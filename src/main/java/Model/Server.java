@@ -4,7 +4,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-
+ // avrage waiting time cat sta in coada si waiting service time servic etimeul ala
 public class Server implements Runnable {
     private BlockingQueue<Task> tasks;  //serverul ia taskuri din ea pe rand si așteapta automat daca e goala ,  opreste temporar threadul serverului pana apare un task în coada
     private AtomicInteger waitingPeriod; //pentru a evitate problme de concurenta, cand mai multe threaduri vor sa modifice valoarea
@@ -28,18 +28,18 @@ public class Server implements Runnable {
             try {
                 Task currentTask= tasks.peek();
                // Task currentTask = tasks.poll(1, TimeUnit.SECONDS); //aici nu e bine,strege taskul nu il pune in coada,thread pool sa salvam,sa ne gandim cum oprim thredurile de servere
-                if(currentTask != null) {
-                    Thread.sleep(1000L); // prin getServiceTime luam cat dureaza un task si inmulțim cu 1000 pentru cs sleep primeste timpul în milisecunde, iar serviceTime e în secunde
-                    if(currentTask.getServiceTime()==1)
-                    {
+                if (currentTask != null) {
+                    Thread.sleep(1000L);
+
+                    currentTask.setServiceTime(currentTask.getServiceTime() - 1);
+                    if (waitingPeriod.get() > 0) {
+                        waitingPeriod.addAndGet(-1);
+                    }
+
+                    if (currentTask.getServiceTime() == 0) {
                         tasks.remove(currentTask);
                     }
-                    else{
-                        currentTask.setServiceTime(currentTask.getServiceTime()-1);
-                    }
-                       // scadem timpul task-ului din waitingPeriod, pentru ca el nu mai contribuie la timpul de așteptare al cozii—acum este în execuție
                 }
-              if(waitingPeriod.get()>0)  waitingPeriod.addAndGet(-1);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
@@ -56,7 +56,6 @@ public class Server implements Runnable {
     }
 
     public int getTaskCount() {
-
        return tasks.size();
     }
     public AtomicInteger getTotalWaitingTime() {
@@ -74,7 +73,10 @@ public class Server implements Runnable {
     public void setQueueNumber(int queueNumber) {
         this.queueNumber = queueNumber;
     }
-
+    public boolean isEmpty()
+    {
+        return tasks.isEmpty();
+    }
     @Override
     public String toString() {
         return "Server " + this.queueNumber + " | Tasks: " + tasks.size()+" "+ tasks + " | Waiting Period: " + getTotalWaitingTime();

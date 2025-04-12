@@ -6,6 +6,7 @@ import Model.Task;
 import java.util.List;
 
 public class TimeStrategy implements Strategy {
+    private Server server;
     @Override
     public void addTask(List<Server> servers, Task t) {
         // presupunem initial ca primul server/coada are cel mai mic timp total de procesare
@@ -25,5 +26,15 @@ public class TimeStrategy implements Strategy {
 
         // adaugam task-ul in coada cu cel cu cel mai mic timp total de procesare
         bestServer.addTask(t);
+        server=bestServer;
+    }
+
+    @Override
+    public Server getServer() {
+        return server;
+    }
+
+    public void setServer(Server server) {
+        this.server = server;
     }
 }

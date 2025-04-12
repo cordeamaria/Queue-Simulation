@@ -11,6 +11,7 @@ public class Scheduler {
     private List<Server> servers;
     private int maxNoServers;
     private int maxTasksPerServer;
+    private int totalWaitingTime=0;
     private Strategy strategy;
 
     public Scheduler(int maxNoServers, int maxTasksPerServer) {
@@ -36,18 +37,55 @@ public class Scheduler {
         }
     }
 
-    public synchronized void dispatchTask(Task t) {
+    public synchronized int dispatchTask(Task t) {
+        Server serverBest;
+        int waitingTimeTask=0;
         // folosim synchronized ca sa ne asiguram ca un singur thread poate trimite un task la servere la un moment dat.
         // protejeaza lista de servere si evita probleme cand mai multe threaduri ar putea adauga taskuri în același timp.
-
         // in functie de strategia aleasa,apelam addTask
         if (strategy != null) {
-            strategy.addTask(servers, t);
+            strategy.addTask(servers, t);  // doar adaugă taskul și salvează serverul intern
+            serverBest = strategy.getServer();  // obține serverul selectat
+
+            if (serverBest != null) {
+                waitingTimeTask = serverBest.getTotalWaitingTime().get() - t.getServiceTime(); // cât stă în coadă
+            }
         }
+
+        return waitingTimeTask;
     }
 
     public List<Server> getServers() {
 
         return servers;
     }
+    public boolean schedulerIsEmpty() {
+        for (Server server : servers) {
+            if (server.isEmpty()==false || server.getTotalWaitingTime().get()>0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    // Metoda pentru a elimina task-urile care au `serviceTime == 0`
+    public void removeCompletedTasks() {
+        for (Server server : servers) {
+            List<Task> toRemove = new ArrayList<>();
+            for (Task task : server.getTasks()) {
+                if (task.getServiceTime() <= 0) {
+                    toRemove.add(task);
+                }
+            }
+            server.getTasks().removeAll(toRemove);
+        }
+    }
+    public int totalTasks()
+    {
+        int total=0;
+        for (Server server : servers) {
+                total+=server.getTaskCount();
+        }
+        return total;
+    }
+
 }
