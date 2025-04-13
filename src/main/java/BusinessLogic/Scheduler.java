@@ -44,11 +44,11 @@ public class Scheduler {
         // protejeaza lista de servere si evita probleme cand mai multe threaduri ar putea adauga taskuri în același timp.
         // in functie de strategia aleasa,apelam addTask
         if (strategy != null) {
-            strategy.addTask(servers, t);  // doar adaugă taskul și salvează serverul intern
-            serverBest = strategy.getServer();  // obține serverul selectat
+            strategy.addTask(servers, t);
+            serverBest = strategy.getServer();  // obține serverul selectat in care este introdus taskul
 
             if (serverBest != null) {
-                waitingTimeTask = serverBest.getTotalWaitingTime().get() - t.getServiceTime(); // cât stă în coadă
+                waitingTimeTask = serverBest.getTotalWaitingTime().get() - t.getServiceTime(); // calculam pentru fiecare task adaugat cat va sta in coada,si anume ctimpul total de service a cozii minus serviceTime a taskului adaugat
             }
         }
 
@@ -67,7 +67,7 @@ public class Scheduler {
         }
         return true;
     }
-    // Metoda pentru a elimina task-urile care au `serviceTime == 0`
+    // metoda pentru a elimina task-urile care au serviceTime == 0
     public void removeCompletedTasks() {
         for (Server server : servers) {
             List<Task> toRemove = new ArrayList<>();

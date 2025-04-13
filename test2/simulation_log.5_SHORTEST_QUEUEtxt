@@ -1,0 +1,549 @@
+Time: 0
+Waiting tasks:
+(44, 2, 1),(1, 3, 7),(33, 3, 4),(40, 3, 4),(22, 4, 1),(35, 4, 1),(29, 5, 3),(16, 7, 5),(18, 9, 1),(21, 9, 2),
+(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),
+(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 1
+Waiting tasks:
+(44, 2, 1),(1, 3, 7),(33, 3, 4),(40, 3, 4),(22, 4, 1),(35, 4, 1),(29, 5, 3),(16, 7, 5),(18, 9, 1),(21, 9, 2),
+(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),
+(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 2
+Waiting tasks:
+(1, 3, 7),(33, 3, 4),(40, 3, 4),(22, 4, 1),(35, 4, 1),(29, 5, 3),(16, 7, 5),(18, 9, 1),(21, 9, 2),(5, 10, 3),
+(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),
+(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),
+(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),
+(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(44, 2, 1)] | Waiting Period: 1
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 3
+Waiting tasks:
+(22, 4, 1),(35, 4, 1),(29, 5, 3),(16, 7, 5),(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),
+(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),
+(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),
+(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),
+(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 1 [(1, 3, 7)] | Waiting Period: 7
+Server 3 | Tasks: 1 [(33, 3, 4)] | Waiting Period: 4
+Server 4 | Tasks: 1 [(40, 3, 4)] | Waiting Period: 4
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 4
+Waiting tasks:
+(29, 5, 3),(16, 7, 5),(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),
+(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),
+(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),
+(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),
+(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(22, 4, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(1, 3, 6)] | Waiting Period: 6
+Server 3 | Tasks: 1 [(33, 3, 4)] | Waiting Period: 4
+Server 4 | Tasks: 1 [(40, 3, 4)] | Waiting Period: 4
+Server 5 | Tasks: 1 [(35, 4, 1)] | Waiting Period: 1
+
+Time: 5
+Waiting tasks:
+(16, 7, 5),(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),
+(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),
+(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),
+(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),
+(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(29, 5, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(1, 3, 5)] | Waiting Period: 5
+Server 3 | Tasks: 1 [(33, 3, 2)] | Waiting Period: 2
+Server 4 | Tasks: 1 [(40, 3, 3)] | Waiting Period: 3
+Server 5 | Tasks: 1 [(35, 4, 1)] | Waiting Period: 1
+
+Time: 6
+Waiting tasks:
+(16, 7, 5),(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),
+(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),
+(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),
+(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),
+(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(29, 5, 2)] | Waiting Period: 2
+Server 2 | Tasks: 1 [(1, 3, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(33, 3, 1)] | Waiting Period: 1
+Server 4 | Tasks: 1 [(40, 3, 1)] | Waiting Period: 1
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 7
+Waiting tasks:
+(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),
+(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),
+(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(29, 5, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(1, 3, 3)] | Waiting Period: 3
+Server 3 | Tasks: 1 [(16, 7, 5)] | Waiting Period: 5
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 8
+Waiting tasks:
+(18, 9, 1),(21, 9, 2),(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),
+(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),
+(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 1 [(1, 3, 2)] | Waiting Period: 2
+Server 3 | Tasks: 1 [(16, 7, 4)] | Waiting Period: 4
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 9
+Waiting tasks:
+(5, 10, 3),(12, 10, 4),(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),
+(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 1 [(18, 9, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(1, 3, 1)] | Waiting Period: 1
+Server 3 | Tasks: 1 [(16, 7, 3)] | Waiting Period: 3
+Server 4 | Tasks: 1 [(21, 9, 2)] | Waiting Period: 2
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 10
+Waiting tasks:
+(10, 11, 5),(36, 11, 5),(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),
+(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),
+(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),
+(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(5, 10, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(12, 10, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(16, 7, 2)] | Waiting Period: 2
+Server 4 | Tasks: 1 [(21, 9, 1)] | Waiting Period: 1
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 11
+Waiting tasks:
+(3, 12, 1),(8, 12, 5),(13, 12, 6),(27, 12, 7),(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),
+(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),
+(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),
+(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(5, 10, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(12, 10, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(16, 7, 1)] | Waiting Period: 1
+Server 4 | Tasks: 1 [(10, 11, 5)] | Waiting Period: 5
+Server 5 | Tasks: 1 [(36, 11, 5)] | Waiting Period: 5
+
+Time: 12
+Waiting tasks:
+(49, 13, 2),(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),
+(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(5, 10, 1), (8, 12, 5)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(12, 10, 2), (13, 12, 6)] | Waiting Period: 8
+Server 3 | Tasks: 2 [(3, 12, 1), (27, 12, 7)] | Waiting Period: 8
+Server 4 | Tasks: 1 [(10, 11, 4)] | Waiting Period: 4
+Server 5 | Tasks: 1 [(36, 11, 4)] | Waiting Period: 4
+
+Time: 13
+Waiting tasks:
+(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),
+(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),
+(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),
+(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(8, 12, 5), (49, 13, 2)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(12, 10, 1), (13, 12, 6)] | Waiting Period: 7
+Server 3 | Tasks: 1 [(27, 12, 7)] | Waiting Period: 7
+Server 4 | Tasks: 1 [(10, 11, 3)] | Waiting Period: 3
+Server 5 | Tasks: 1 [(36, 11, 4)] | Waiting Period: 4
+
+Time: 14
+Waiting tasks:
+(15, 15, 4),(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),
+(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),
+(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),
+(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(8, 12, 4), (49, 13, 2)] | Waiting Period: 6
+Server 2 | Tasks: 1 [(13, 12, 6)] | Waiting Period: 6
+Server 3 | Tasks: 1 [(27, 12, 6)] | Waiting Period: 6
+Server 4 | Tasks: 1 [(10, 11, 2)] | Waiting Period: 2
+Server 5 | Tasks: 1 [(36, 11, 3)] | Waiting Period: 3
+
+Time: 15
+Waiting tasks:
+(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 2 [(8, 12, 3), (49, 13, 2)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(13, 12, 5), (15, 15, 4)] | Waiting Period: 9
+Server 3 | Tasks: 1 [(27, 12, 5)] | Waiting Period: 5
+Server 4 | Tasks: 1 [(10, 11, 1)] | Waiting Period: 1
+Server 5 | Tasks: 1 [(36, 11, 1)] | Waiting Period: 1
+
+Time: 16
+Waiting tasks:
+(4, 17, 7),(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 2 [(8, 12, 2), (49, 13, 2)] | Waiting Period: 4
+Server 2 | Tasks: 2 [(13, 12, 4), (15, 15, 4)] | Waiting Period: 8
+Server 3 | Tasks: 1 [(27, 12, 4)] | Waiting Period: 4
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 1 [(36, 11, 1)] | Waiting Period: 1
+
+Time: 17
+Waiting tasks:
+(32, 18, 6),(46, 18, 7),(50, 18, 3),(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),
+(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),
+(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(8, 12, 1), (49, 13, 2)] | Waiting Period: 3
+Server 2 | Tasks: 2 [(13, 12, 3), (15, 15, 4)] | Waiting Period: 7
+Server 3 | Tasks: 1 [(27, 12, 3)] | Waiting Period: 3
+Server 4 | Tasks: 1 [(4, 17, 7)] | Waiting Period: 7
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 18
+Waiting tasks:
+(19, 19, 5),(38, 19, 2),(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),
+(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),
+(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(49, 13, 2), (46, 18, 7)] | Waiting Period: 9
+Server 2 | Tasks: 2 [(13, 12, 2), (15, 15, 4)] | Waiting Period: 6
+Server 3 | Tasks: 2 [(27, 12, 2), (50, 18, 3)] | Waiting Period: 5
+Server 4 | Tasks: 1 [(4, 17, 6)] | Waiting Period: 6
+Server 5 | Tasks: 1 [(32, 18, 6)] | Waiting Period: 6
+
+Time: 19
+Waiting tasks:
+(24, 20, 1),(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),
+(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),
+(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(49, 13, 1), (46, 18, 7)] | Waiting Period: 8
+Server 2 | Tasks: 2 [(13, 12, 1), (15, 15, 4)] | Waiting Period: 5
+Server 3 | Tasks: 2 [(27, 12, 1), (50, 18, 3)] | Waiting Period: 4
+Server 4 | Tasks: 2 [(4, 17, 5), (19, 19, 5)] | Waiting Period: 10
+Server 5 | Tasks: 2 [(32, 18, 6), (38, 19, 2)] | Waiting Period: 8
+
+Time: 20
+Waiting tasks:
+(11, 21, 2),(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),
+(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),
+(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(46, 18, 7), (24, 20, 1)] | Waiting Period: 8
+Server 2 | Tasks: 1 [(15, 15, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(50, 18, 3)] | Waiting Period: 3
+Server 4 | Tasks: 2 [(4, 17, 4), (19, 19, 5)] | Waiting Period: 9
+Server 5 | Tasks: 2 [(32, 18, 5), (38, 19, 2)] | Waiting Period: 7
+
+Time: 21
+Waiting tasks:
+(2, 22, 4),(39, 22, 3),(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(46, 18, 6), (24, 20, 1)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(15, 15, 3), (11, 21, 2)] | Waiting Period: 5
+Server 3 | Tasks: 1 [(50, 18, 2)] | Waiting Period: 2
+Server 4 | Tasks: 2 [(4, 17, 3), (19, 19, 5)] | Waiting Period: 8
+Server 5 | Tasks: 2 [(32, 18, 3), (38, 19, 2)] | Waiting Period: 5
+
+Time: 22
+Waiting tasks:
+(30, 23, 1),(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 3 [(46, 18, 5), (24, 20, 1), (39, 22, 3)] | Waiting Period: 9
+Server 2 | Tasks: 2 [(15, 15, 2), (11, 21, 2)] | Waiting Period: 4
+Server 3 | Tasks: 2 [(50, 18, 1), (2, 22, 4)] | Waiting Period: 5
+Server 4 | Tasks: 2 [(4, 17, 2), (19, 19, 5)] | Waiting Period: 7
+Server 5 | Tasks: 2 [(32, 18, 3), (38, 19, 2)] | Waiting Period: 5
+
+Time: 23
+Waiting tasks:
+(37, 24, 2),(42, 24, 3),(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),
+(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 3 [(46, 18, 4), (24, 20, 1), (39, 22, 3)] | Waiting Period: 8
+Server 2 | Tasks: 2 [(15, 15, 1), (11, 21, 2)] | Waiting Period: 3
+Server 3 | Tasks: 2 [(2, 22, 4), (30, 23, 1)] | Waiting Period: 5
+Server 4 | Tasks: 2 [(4, 17, 1), (19, 19, 5)] | Waiting Period: 6
+Server 5 | Tasks: 2 [(32, 18, 2), (38, 19, 2)] | Waiting Period: 4
+
+Time: 24
+Waiting tasks:
+(25, 25, 3),(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),
+(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 3 [(46, 18, 3), (24, 20, 1), (39, 22, 3)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(11, 21, 2), (37, 24, 2)] | Waiting Period: 4
+Server 3 | Tasks: 2 [(2, 22, 3), (30, 23, 1)] | Waiting Period: 4
+Server 4 | Tasks: 2 [(19, 19, 5), (42, 24, 3)] | Waiting Period: 8
+Server 5 | Tasks: 1 [(38, 19, 2)] | Waiting Period: 2
+
+Time: 25
+Waiting tasks:
+(7, 26, 4),(14, 26, 4),(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),
+(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 3 [(46, 18, 2), (24, 20, 1), (39, 22, 3)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(11, 21, 1), (37, 24, 2)] | Waiting Period: 3
+Server 3 | Tasks: 2 [(2, 22, 2), (30, 23, 1)] | Waiting Period: 3
+Server 4 | Tasks: 2 [(19, 19, 4), (42, 24, 3)] | Waiting Period: 7
+Server 5 | Tasks: 2 [(38, 19, 2), (25, 25, 3)] | Waiting Period: 5
+
+Time: 26
+Waiting tasks:
+(17, 27, 7),(41, 27, 5),(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),
+(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 3 [(46, 18, 1), (24, 20, 1), (39, 22, 3)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(37, 24, 2), (7, 26, 4)] | Waiting Period: 6
+Server 3 | Tasks: 2 [(2, 22, 1), (30, 23, 1)] | Waiting Period: 2
+Server 4 | Tasks: 2 [(19, 19, 3), (42, 24, 3)] | Waiting Period: 6
+Server 5 | Tasks: 2 [(25, 25, 3), (14, 26, 4)] | Waiting Period: 7
+
+Time: 27
+Waiting tasks:
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 3 [(24, 20, 1), (39, 22, 3), (41, 27, 5)] | Waiting Period: 9
+Server 2 | Tasks: 2 [(37, 24, 1), (7, 26, 4)] | Waiting Period: 5
+Server 3 | Tasks: 2 [(30, 23, 1), (17, 27, 7)] | Waiting Period: 8
+Server 4 | Tasks: 2 [(19, 19, 2), (42, 24, 3)] | Waiting Period: 5
+Server 5 | Tasks: 2 [(25, 25, 2), (14, 26, 4)] | Waiting Period: 6
+
+Time: 28
+Waiting tasks:
+(26, 29, 3),(31, 29, 4),(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(39, 22, 3), (41, 27, 5)] | Waiting Period: 8
+Server 2 | Tasks: 1 [(7, 26, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(17, 27, 7)] | Waiting Period: 7
+Server 4 | Tasks: 2 [(19, 19, 1), (42, 24, 3)] | Waiting Period: 4
+Server 5 | Tasks: 2 [(25, 25, 1), (14, 26, 4)] | Waiting Period: 5
+
+Time: 29
+Waiting tasks:
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 2 [(39, 22, 2), (41, 27, 5)] | Waiting Period: 7
+Server 2 | Tasks: 2 [(7, 26, 3), (26, 29, 3)] | Waiting Period: 6
+Server 3 | Tasks: 2 [(17, 27, 6), (31, 29, 4)] | Waiting Period: 10
+Server 4 | Tasks: 1 [(42, 24, 3)] | Waiting Period: 3
+Server 5 | Tasks: 1 [(14, 26, 4)] | Waiting Period: 4
+
+Time: 30
+Waiting tasks:
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 2 [(39, 22, 1), (41, 27, 5)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(7, 26, 2), (26, 29, 3)] | Waiting Period: 5
+Server 3 | Tasks: 2 [(17, 27, 5), (31, 29, 4)] | Waiting Period: 9
+Server 4 | Tasks: 1 [(42, 24, 2)] | Waiting Period: 2
+Server 5 | Tasks: 1 [(14, 26, 3)] | Waiting Period: 3
+
+Time: 31
+Waiting tasks:
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 1 [(41, 27, 5)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(7, 26, 1), (26, 29, 3)] | Waiting Period: 4
+Server 3 | Tasks: 2 [(17, 27, 4), (31, 29, 4)] | Waiting Period: 8
+Server 4 | Tasks: 1 [(42, 24, 1)] | Waiting Period: 1
+Server 5 | Tasks: 1 [(14, 26, 2)] | Waiting Period: 2
+
+Time: 32
+Waiting tasks:
+(28, 33, 4),(47, 33, 4),(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+
+Servers:
+Server 1 | Tasks: 1 [(41, 27, 4)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(26, 29, 3)] | Waiting Period: 3
+Server 3 | Tasks: 2 [(17, 27, 3), (31, 29, 4)] | Waiting Period: 7
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 1 [(14, 26, 1)] | Waiting Period: 1
+
+Time: 33
+Waiting tasks:
+(9, 34, 4),(45, 34, 2),(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 1 [(41, 27, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(26, 29, 2)] | Waiting Period: 2
+Server 3 | Tasks: 2 [(17, 27, 2), (31, 29, 4)] | Waiting Period: 6
+Server 4 | Tasks: 1 [(28, 33, 4)] | Waiting Period: 4
+Server 5 | Tasks: 1 [(47, 33, 4)] | Waiting Period: 4
+
+Time: 34
+Waiting tasks:
+(34, 35, 3),(48, 35, 3),(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(41, 27, 2), (9, 34, 4)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(26, 29, 1), (45, 34, 2)] | Waiting Period: 3
+Server 3 | Tasks: 2 [(17, 27, 1), (31, 29, 4)] | Waiting Period: 5
+Server 4 | Tasks: 1 [(28, 33, 3)] | Waiting Period: 3
+Server 5 | Tasks: 1 [(47, 33, 3)] | Waiting Period: 3
+
+Time: 35
+Waiting tasks:
+(6, 36, 5),(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(41, 27, 1), (9, 34, 4)] | Waiting Period: 5
+Server 2 | Tasks: 2 [(45, 34, 2), (34, 35, 3)] | Waiting Period: 5
+Server 3 | Tasks: 2 [(31, 29, 4), (48, 35, 3)] | Waiting Period: 7
+Server 4 | Tasks: 1 [(28, 33, 2)] | Waiting Period: 2
+Server 5 | Tasks: 1 [(47, 33, 2)] | Waiting Period: 2
+
+Time: 36
+Waiting tasks:
+(23, 37, 3),(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(9, 34, 4), (6, 36, 5)] | Waiting Period: 9
+Server 2 | Tasks: 2 [(45, 34, 1), (34, 35, 3)] | Waiting Period: 4
+Server 3 | Tasks: 2 [(31, 29, 3), (48, 35, 3)] | Waiting Period: 6
+Server 4 | Tasks: 1 [(28, 33, 1)] | Waiting Period: 1
+Server 5 | Tasks: 1 [(47, 33, 1)] | Waiting Period: 1
+
+Time: 37
+Waiting tasks:
+(20, 38, 5),(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(9, 34, 3), (6, 36, 5)] | Waiting Period: 8
+Server 2 | Tasks: 1 [(34, 35, 3)] | Waiting Period: 3
+Server 3 | Tasks: 2 [(31, 29, 2), (48, 35, 3)] | Waiting Period: 5
+Server 4 | Tasks: 1 [(23, 37, 3)] | Waiting Period: 3
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 38
+Waiting tasks:
+(43, 39, 5),
+Servers:
+Server 1 | Tasks: 2 [(9, 34, 2), (6, 36, 5)] | Waiting Period: 7
+Server 2 | Tasks: 1 [(34, 35, 2)] | Waiting Period: 2
+Server 3 | Tasks: 2 [(31, 29, 1), (48, 35, 3)] | Waiting Period: 4
+Server 4 | Tasks: 1 [(23, 37, 2)] | Waiting Period: 2
+Server 5 | Tasks: 1 [(20, 38, 5)] | Waiting Period: 5
+
+Time: 39
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 2 [(9, 34, 1), (6, 36, 5)] | Waiting Period: 6
+Server 2 | Tasks: 2 [(34, 35, 1), (43, 39, 5)] | Waiting Period: 6
+Server 3 | Tasks: 1 [(48, 35, 3)] | Waiting Period: 3
+Server 4 | Tasks: 1 [(23, 37, 1)] | Waiting Period: 1
+Server 5 | Tasks: 1 [(20, 38, 4)] | Waiting Period: 4
+
+Time: 40
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 1 [(6, 36, 5)] | Waiting Period: 5
+Server 2 | Tasks: 1 [(43, 39, 5)] | Waiting Period: 5
+Server 3 | Tasks: 1 [(48, 35, 2)] | Waiting Period: 2
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 1 [(20, 38, 3)] | Waiting Period: 3
+
+Time: 41
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 1 [(6, 36, 4)] | Waiting Period: 4
+Server 2 | Tasks: 1 [(43, 39, 4)] | Waiting Period: 4
+Server 3 | Tasks: 1 [(48, 35, 1)] | Waiting Period: 1
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 1 [(20, 38, 2)] | Waiting Period: 2
+
+Time: 42
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 1 [(6, 36, 3)] | Waiting Period: 3
+Server 2 | Tasks: 1 [(43, 39, 3)] | Waiting Period: 3
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 1 [(20, 38, 1)] | Waiting Period: 1
+
+Time: 43
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 1 [(6, 36, 2)] | Waiting Period: 2
+Server 2 | Tasks: 1 [(43, 39, 2)] | Waiting Period: 2
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: 44
+Waiting tasks:
+
+Servers:
+Server 1 | Tasks: 1 [(6, 36, 1)] | Waiting Period: 1
+Server 2 | Tasks: 1 [(43, 39, 1)] | Waiting Period: 1
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Time: Final Time
+Waiting clients:
+
+Servers:
+Server 1 | Tasks: 0 [] | Waiting Period: 0
+Server 2 | Tasks: 0 [] | Waiting Period: 0
+Server 3 | Tasks: 0 [] | Waiting Period: 0
+Server 4 | Tasks: 0 [] | Waiting Period: 0
+Server 5 | Tasks: 0 [] | Waiting Period: 0
+
+Peak Hour: 22
+Average Waiting Time: 1.84
+Average Service Time: 3.70
+

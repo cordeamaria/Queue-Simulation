@@ -7,7 +7,6 @@ import java.io.IOException;
 public class Storage {
     public static void writeLog(String message,String FILE_NAME) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
-            // trebuie 3 fisiere separate
             writer.append(message);
             writer.newLine();  // trecere la linia noua
         } catch (IOException e) {

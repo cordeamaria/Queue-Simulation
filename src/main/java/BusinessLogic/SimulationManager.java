@@ -9,14 +9,14 @@ import Model.Task;
 
 public class SimulationManager implements Runnable {
     // Spune că sunt input, ar trebui să le primesc din interfață
-    public int timeLimit;
-    public int maxArrivleTime;
-    public int minArrivalTime;
-    public int maxServiceTime;
-    public int minServiceTime;
-    public int numberOfServers;
-    public int numberOfClients;
-    public SelectionPolicy selectionPolicy; // selectez metoda de sortare
+    private int timeLimit;
+    private int maxArrivleTime;
+    private int minArrivalTime;
+    private int maxServiceTime;
+    private int minServiceTime;
+    private int numberOfServers;
+    private int numberOfClients;
+    private SelectionPolicy selectionPolicy; // selectez metoda de sortare
     private Scheduler scheduler;
     private SimulationFrame frame;
 
@@ -27,13 +27,14 @@ public class SimulationManager implements Runnable {
         this.minArrivalTime = frame.getMinArrivalTime();
         this.maxServiceTime = frame.getMaxServiceTime();
         this.minServiceTime = frame.getMinServiceTime();
-        this.numberOfClients = frame.getNumberOfClients();
+        this.numberOfClients = frame.getNumberOfTasks();
         this.numberOfServers = frame.getNumberOfServers();
         this.selectionPolicy = frame.getPolicyComboBox();
 
         scheduler = new Scheduler(numberOfServers, numberOfClients);
         scheduler.changeStrategy(selectionPolicy);
     }
+
 
     public SimulationManager(SimulationFrame frame) {
         this.frame = frame;
@@ -81,33 +82,37 @@ public class SimulationManager implements Runnable {
                  for (Task task : new ArrayList<>(generatedTasks)) {
                      int waiting=0;
                      if (task.getArrivalTime() == currentTime) {
-                         tasksWaiting++;
-                         waiting = scheduler.dispatchTask(task); // acum e corect
-                         if (currentTime + waiting > timeLimit) {
+                         tasksWaiting++;  // numaram cate taskuri asteapta pe parcursul intregii simulari
+                         waiting = scheduler.dispatchTask(task); // cand adugam un task functia returneaza cat va trebui sa astepte taskul respectiv pana ajunge in fata cozii
+                         if (currentTime + waiting > timeLimit) {  // daca are mai mult de asteptat decat timpul simulrai va astepta pana se termina simularea,adica timeLimit-currentTime
                              totalWaitingTime += timeLimit - currentTime;
                          } else {
                              totalWaitingTime += waiting;
                          }
                          if(currentTime + waiting+task.getServiceTime() <= timeLimit) {
+                             //calculam timpul total de servire pentru a face media,
+                             // daca currentTime + cat trebuie sa astepte clientul pana este servit+timpul de servire sunt mai mici decat timpul simularii,
+                             // luam in cacul taskul. Daca nu inseamna ca clientuk nu va fi servit
                              totalServiceTime += task.getServiceTime();
-                             tasksServed++;
+                             tasksServed++;   //cati clienti au fost serviti
                          }
-                         generatedTasks.remove(task);
+                         generatedTasks.remove(task); //stergem din lista de taskuri generate
                      }
 
                  }
-             totalTasks =scheduler.totalTasks();
+             totalTasks =scheduler.totalTasks(); // la fiecare timp calculam numarul de taskuri din toate cozile
              if(totalTasks > maxTasks) {
                  peakHour=currentTime;
                  maxTasks = totalTasks;
              }
-                 scheduler.removeCompletedTasks();
+                 scheduler.removeCompletedTasks(); //in fiecare timp parcurgem toate cozile si stergem taskurile cu serviceTime==0
 
                  // actualizam frame
                 frame.update(currentTime, generatedTasks, scheduler.getServers());
 
 
                  // asteptam 1 sec
+                //se simuleaza trecerea unui "timp real" de o secundă la fiecare pas
                  try {
                      Thread.sleep(1000);
                  } catch (InterruptedException e) {
@@ -118,16 +123,12 @@ public class SimulationManager implements Runnable {
                  currentTime++;
 
              }
-        System.out.println("totalW: " + totalWaitingTime + ", TasksWaiting: " + tasksWaiting+"\n");
-         System.out.println("totalS " + totalServiceTime + ", TasksServed: " + tasksServed+"\n");
-        totalWaitingTime=(double)totalWaitingTime/(double)tasksWaiting; //calculam pe rand pentru ficare task cat are de stat in coada,daca depaseste timpul simulari audnam cat mai e pana la finalul simularii. impartim la cate taskuri au ajuns in cozi
-        totalServiceTime=(double)totalServiceTime/(double)tasksServed;
+         //calculam average waiting time
+        totalWaitingTime=totalWaitingTime/(double)tasksWaiting;
+         //calculam average service time
+        totalServiceTime=totalServiceTime/(double)tasksServed;
+        //actualizam frame cu datele finale
        frame.lastUpdate("Final Time", generatedTasks, scheduler.getServers(),peakHour,totalWaitingTime,totalServiceTime);
-        System.out.println("Simularea s-a încheiat!");
-        System.out.println("Ora de vârf: " + peakHour);
-        frame.displayResults(scheduler);
-       // System.out.println("Timp mediu de așteptare: " + averageWaitingTime);
-//        System.out.println("Timp mediu de procesare: " + averageServiceTime);
-//        System.out.println("Cozile sunt goale la timpul " + currentTime);
+
     }
 }
