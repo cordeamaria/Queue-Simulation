@@ -131,4 +131,10 @@ public class SimulationManager implements Runnable {
        frame.lastUpdate("Final Time", generatedTasks, scheduler.getServers(),peakHour,totalWaitingTime,totalServiceTime);
 
     }
+
+
+    public static void main(String[] args) {
+        SimulationManager simulationManager = new SimulationManager(new SimulationFrame());
+        simulationManager.frame.startSimulation();
+    }
 }

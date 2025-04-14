@@ -197,7 +197,7 @@ public class SimulationFrame extends JFrame {
     }
 
 
-    public static void main(String[] args) {
+    public void startSimulation() {
         SimulationFrame frame = new SimulationFrame();
 
         frame.startButton.addActionListener(e -> {
