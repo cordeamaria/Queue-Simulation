@@ -49,7 +49,7 @@ public class SimulationManager implements Runnable {
         for (int i = 0; i < numberOfClients; i++) {
             int processingTime = rand.nextInt(maxServiceTime - minServiceTime + 1) + minServiceTime; // un numar random intre 0 si maxProcessingTime-minProcessingTime,punem plus 1 pt ca retruneaza rand intr 0 si x-1
             //+minProcessingTime ca sa fie intre min si max
-            int arrivalTime = rand.nextInt(maxArrivleTime-minArrivalTime+1) + minArrivalTime;// intre 0 si timeLimit
+            int arrivalTime = rand.nextInt(maxArrivleTime - minArrivalTime + 1) + minArrivalTime;// intre 0 si timeLimit
 
             Task task = new Task(i + 1, arrivalTime, processingTime); //creem taskul
             generatedTasks.add(task);
@@ -64,16 +64,21 @@ public class SimulationManager implements Runnable {
     public void run() {
         init();
         int currentTime = 0;
+
         int peakHour=0;
-        int maxTasks =0; // aici compram in fiecare timp cate taskuri sunt in cozi
+        int maxTasks =0;
         int totalTasks =0;
+
         double totalWaitingTime=0;
         int tasksWaiting=0;
+
         double totalServiceTime=0;
         int tasksServed=0;
+
         // generam taskurile random
         generateNRandomTasks();
          while(true) {
+
              if (currentTime > timeLimit || (generatedTasks.size() == 0  && scheduler.schedulerIsEmpty())) {
                  break;
              }
@@ -105,7 +110,6 @@ public class SimulationManager implements Runnable {
                  peakHour=currentTime;
                  maxTasks = totalTasks;
              }
-                 scheduler.removeCompletedTasks(); //in fiecare timp parcurgem toate cozile si stergem taskurile cu serviceTime==0
 
                  // actualizam frame
                 frame.update(currentTime, generatedTasks, scheduler.getServers());
