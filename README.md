@@ -9,7 +9,7 @@ Acest proiect Java simulează un sistem cu cozi multiple, unde clienții (task-u
 - Logare în fișier .txt a evoluției sistemului (Storage)
 - Afișarea orei de vârf și a timpilor medii la finalul simulării
 
-##Cum se folosește:
+## Cum se folosește:
 1. Rulează aplicația (clasa SimulationFrame)
 2. Introdu parametrii: număr clienți, număr servere, timpi min/max de sosire și procesare
 3. Selectează politica de alocare:
@@ -17,7 +17,7 @@ Acest proiect Java simulează un sistem cu cozi multiple, unde clienții (task-u
    - SHORTEST_TIME – coada cu cel mai mic timp de procesare estimat
 4. Apasă Start și urmărește simularea
 
-##Structură Proiect:
+## Structură Proiect:
 - Model:
   - Task – reprezintă un client
   - Server – coadă care procesează clienți
