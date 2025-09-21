@@ -32,7 +32,7 @@ public class SimulationFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // 🔹 Panel pentru inputuri
+        // panel pentru inputuri
         JPanel inputPanel = new JPanel(new GridLayout(9, 2, 10, 5));
         inputPanel.setBorder(BorderFactory.createTitledBorder("Simulation Parameters"));
 
@@ -57,14 +57,14 @@ public class SimulationFrame extends JFrame {
 
         add(inputPanel, BorderLayout.NORTH);
 
-        // 🔹 Zona de output text cu scroll
+        // zona de output text cu scroll
         textArea = new JTextArea(12, 60);
         textArea.setEditable(false);
         JScrollPane textScrollPane = new JScrollPane(textArea);
         textScrollPane.setBorder(BorderFactory.createTitledBorder("Simulation Log"));
         add(textScrollPane, BorderLayout.CENTER);
 
-        // 🔹 Panelul pentru vizualizare cozi
+        // panelul pentru vizualizare cozi
         visualizerPanel.setPreferredSize(new Dimension(800, 250));
         visualizerPanel.setBorder(BorderFactory.createTitledBorder("Queue Visualization"));
         add(visualizerPanel, BorderLayout.SOUTH);
@@ -121,6 +121,7 @@ public class SimulationFrame extends JFrame {
         sb.append("Average Waiting Time: ").append(String.format("%.2f", averageWaitingTime)).append("\n");
         sb.append("Average Service Time: ").append(String.format("%.2f", averageServiceTime)).append("\n");
         textArea.setText(sb.toString());
+        visualizerPanel.updateServers(servers, tasks);
         Storage.writeLog(sb.toString(), "simulation_log."+ getNumberOfServers()+"_"+getPolicyComboBox()+"txt");  //slavam in fisier
 
     }

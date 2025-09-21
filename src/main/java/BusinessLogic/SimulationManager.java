@@ -61,7 +61,7 @@ public class SimulationManager implements Runnable {
 
 
     @Override
-    public void run() {
+    public synchronized void run() {
         init();
         int currentTime = 0;
 
@@ -88,16 +88,18 @@ public class SimulationManager implements Runnable {
                      int waiting=0;
                      if (task.getArrivalTime() == currentTime) {
                          tasksWaiting++;  // numaram cate taskuri asteapta pe parcursul intregii simulari
-                         waiting = scheduler.dispatchTask(task); // cand adugam un task functia returneaza cat va trebui sa astepte taskul respectiv pana ajunge in fata cozii
-                         if (currentTime + waiting > timeLimit) {  // daca are mai mult de asteptat decat timpul simulrai va astepta pana se termina simularea,adica timeLimit-currentTime
+                         waiting = scheduler.dispatchTask(task); // cand adugam un task functia returneaza
+                         // cat va trebui sa astepte taskul respectiv pana ajunge in fata cozii
+                         if (currentTime + waiting > timeLimit) {  // daca are mai mult de asteptat decat timpul simulrai
+                             // va astepta pana se termina simularea,adica timeLimit-currentTime
                              totalWaitingTime += timeLimit - currentTime;
                          } else {
                              totalWaitingTime += waiting;
                          }
                          if(currentTime + waiting+task.getServiceTime() <= timeLimit) {
                              //calculam timpul total de servire pentru a face media,
-                             // daca currentTime + cat trebuie sa astepte clientul pana este servit+timpul de servire sunt mai mici decat timpul simularii,
-                             // luam in cacul taskul. Daca nu inseamna ca clientuk nu va fi servit
+                             // daca currentTime + cat trebuie sa astepte clientul pana este servit+timpul de servire sunt mai mici
+                             // decat timpul simularii,luam in cacul taskul. Daca nu inseamna ca clientul nu va fi servit
                              totalServiceTime += task.getServiceTime();
                              tasksServed++;   //cati clienti au fost serviti
                          }

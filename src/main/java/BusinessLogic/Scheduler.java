@@ -48,7 +48,8 @@ public class Scheduler {
             serverBest = strategy.getServer();  // obține serverul selectat in care este introdus taskul
 
             if (serverBest != null) {
-                waitingTimeTask = serverBest.getTotalWaitingTime().get() - t.getServiceTime(); // calculam pentru fiecare task adaugat cat va sta in coada,si anume ctimpul total de service a cozii minus serviceTime a taskului adaugat
+                waitingTimeTask = serverBest.getTotalWaitingTime().get() - t.getServiceTime(); // calculam pentru fiecare task adaugat
+                // cat va sta in coada,si anume timpul total de servire a cozii minus serviceTime a taskului adaugat
             }
         }
 
