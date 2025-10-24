@@ -1,39 +1,39 @@
 # Queue Simulation
 
-Acest proiect Java simulează un sistem cu cozi multiple, unde clienții (task-uri) sunt alocați dinamic către servere în funcție de o strategie de alocare selectată.
+This Java project simulates a multi-queue system where clients (tasks) are dynamically assigned to servers based on a selected allocation strategy.
 
-## Funcționalități:
-- Generarea automată a clienților cu timp de sosire și service aleator
-- Alocarea lor în servere după politica selectată (SHORTEST_QUEUE / SHORTEST_TIME)
-- Vizualizare grafică în timp real a stării cozilor
-- Logare în fișier .txt a evoluției sistemului (Storage)
-- Afișarea orei de vârf și a timpilor medii la finalul simulării
+## Features:
+- Automatic generation of clients with random arrival and service times  
+- Dynamic allocation to servers according to the selected policy (SHORTEST_QUEUE / SHORTEST_TIME)  
+- Real-time graphical visualization of the queue states  
+- Logging of system evolution to a `.txt` file (Storage)  
+- Display of peak time and average times at the end of the simulation  
 
-## Cum se folosește:
-1. Rulează aplicația (clasa SimulationFrame)
-2. Introdu parametrii: număr clienți, număr servere, timpi min/max de sosire și procesare
-3. Selectează politica de alocare:
-   - SHORTEST_QUEUE – coada cu cei mai puțini clienți
-   - SHORTEST_TIME – coada cu cel mai mic timp de procesare estimat
-4. Apasă Start și urmărește simularea
+## How to Use:
+1. Run the application (SimulationFrame class)  
+2. Enter the parameters: number of clients, number of servers, min/max arrival and service times  
+3. Select the allocation policy:
+   - **SHORTEST_QUEUE** – assigns to the queue with the fewest clients  
+   - **SHORTEST_TIME** – assigns to the queue with the smallest estimated processing time  
+4. Press **Start** and observe the simulation  
 
-## Structură Proiect:
-- Model:
-  - Task – reprezintă un client
-  - Server – coadă care procesează clienți
+## Project Structure:
+- **Model:**
+  - `Task` – represents a client  
+  - `Server` – a queue that processes clients  
 
-- BusinessLogic:
-  - Scheduler – alocă task-urile pe baza politicii
-  - Strategy – interfață pentru politici
-  - ConcreteStrategyQueue / ConcreteStrategyTime – implementări pentru alocare
+- **BusinessLogic:**
+  - `Scheduler` – allocates tasks based on the chosen policy  
+  - `Strategy` – interface for allocation policies  
+  - `ConcreteStrategyQueue` / `ConcreteStrategyTime` – implementations of allocation strategies  
 
-- GUI:
-  - SimulationFrame – interfață grafică
-  - Animație live a cozilor și informații în timp real
+- **GUI:**
+  - `SimulationFrame` – graphical user interface  
+  - Live animation of queues and real-time information display  
 
-- SimulationManager:
-  - Logica principală a simulării
-  - Coordonează fluxul general și afișarea rezultatelor
+- **SimulationManager:**
+  - Main simulation logic  
+  - Coordinates the overall flow and result display  
 
-- Utils:
-  - Storage – scrierea în fișier .txt a evoluției în timp a sistemului
+- **Utils:**
+  - `Storage` – writes the system’s time evolution to a `.txt` file  
